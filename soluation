@@ -44,3 +44,91 @@ print(res)
 soluation
 (50, 30)
 ###############################################
+Exercise 4: Create a function with default argument
+def show_employee(name,salary=9000):
+  print(f"nameis :- {name} , salary is :- {salary}.".title())
+show_employee("Ben", 12000)
+print("#"*10)
+show_employee("Jessa")
+################################################
+soluation
+Nameis :- Ben , Salary Is :- 12000.
+##########
+Nameis :- Jessa , Salary Is :- 9000.
+################################################
+Exercise 5: Create an inner function to calculate the addition in the
+following way
+
+def outer(a, b):
+  def inner(a,b):
+    return a+b
+  add=inner(a,b)
+  return add+5
+result=outer(2,3)
+print(f"the result of operation is:- {result}".title())
+################################################
+soluation
+The Result Of Operation Is:- 10
+################################################
+Exercise 6: Create a recursive function
+def add(num):
+    sum=0
+    for n in range(num+1):
+       sum+=n
+    return sum
+    
+print(f"the result is:- {add(10)}".title())
+print("#"*10)
+def func(num):
+  if num > 0:
+    return num + func(num-1)
+  else:
+    return 0
+result=func(10)
+print(f"the result is:-{result}".title())
+############################################################
+solation
+The Result Is:- 55
+##########
+The Result Is:-55
+############################################################
+Exercise 7: Assign a different name to function and call it through the
+new name
+def display_student(name, age):
+ print(name, age)
+display_student("Emma", 26)
+print("#"*10)
+show_student=display_student("Emma", 26)
+show_student
+############################################################
+soluation
+Emma 26
+##########
+Emma 26
+############################################################
+Exercise 8: Generate a Python list of all the even numbers between 4 to
+30
+def even(num):
+  even_list=[]
+  for n in list(range(4,num)):
+    if n % 2==0:
+        even_list.append(n)
+  print(even_list)
+even(30)  
+############################################################
+soluation
+[4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
+############################################################
+Exercise 9: Find the largest item from a given list
+x = [4, 6, 8, 24, 12, 2]
+def large_num(*num):
+  
+      print(max(num))
+large_num(*x)
+############################################################
+soluation
+24
+
+
+
+
