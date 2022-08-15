@@ -1,0 +1,46 @@
+Exercise 1: Create a function in Python
+
+def hi(name,age):
+
+ 
+  
+    print(f"hello {name}, your age is {age} years old.".title())
+hi('Abdelrhman',33)
+########################################
+soluation:
+Hello Abdelrhman, Your Age Is 33 Years Old.
+############################################
+Exercise 2: Create a function with variable length of
+arguments
+
+def func1(*value):
+  print("the values are:- ")
+  for i in value:
+  
+    print(i)
+# call function with 3 arguments
+func1(20, 40, 60)
+print("#"*10)
+# call function with 2 arguments
+func1(80, 100)
+##########################################
+soluation:
+the values are:- 
+20
+40
+60
+##########
+the values are:- 
+80
+100
+#####################################################
+Exercise 3: Return multiple values from a function
+
+def calculation(a,b):
+  return a+b ,a-b
+res=calculation(40,10)
+print(res)
+################################################
+soluation
+(50, 30)
+###############################################
